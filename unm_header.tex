@@ -3,17 +3,21 @@
 % \geometry{a4paper}
 
 \usepackage{natbib}%use natbib format for citations 
-\bibliographystyle{elsart-harv} % set bibliography style
-%\setcitestyle{notesep={:},round,aysep={,},yysep={;}}%set citation punctuation 
+\bibliographystyle{agu08} % set bibliography style (e.g. elsart-harv or agu08)
+%\setcitestyle{notesep={:},round,aysep={,},yysep={;}} % change 'round' to 'square' for AUG pub
 
 \usepackage{graphicx}%use bitmap images (optional but highly recommended) 
-% \usepackage{epstopdf}%use converted eps graphics (optional) 
-% \usepackage{todo}%add ToDo reminders/comments (optional) 
+\usepackage{epstopdf}%use converted eps graphics (optional) 
+\usepackage{mathtools}
+ \usepackage{todo}%add ToDo reminders/comments (optional) 
 % \usepackage{textcomp}%useful for texty extras (optional) 
  
 \usepackage{tabulary}% necessary for MMD tables 
 \usepackage{booktabs}% necessary for MMD tables 
 \usepackage{hyperref}% necessary for MMD Xref system 
+
+\usepackage{subfig} % Adjusting captions for tables
+\captionsetup{belowskip=12pt,aboveskip=4pt} % Space above and below captions
 
 % \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png} 
 \begin{document}
