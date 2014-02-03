@@ -9,7 +9,8 @@
 \usepackage{graphicx}%use bitmap images (optional but highly recommended) 
 \usepackage{epstopdf}%use converted eps graphics (optional) 
 \usepackage{mathtools}
- \usepackage{todo}%add ToDo reminders/comments (optional) 
+\usepackage[labelfont=bf]{caption}
+% \usepackage[color=orange, textsize=small]{todonotes}%add ToDo reminders/comments (optional) 
 % \usepackage{textcomp}%useful for texty extras (optional) 
  
 \usepackage{tabulary}% necessary for MMD tables 
@@ -17,7 +18,10 @@
 \usepackage{hyperref}% necessary for MMD Xref system 
 
 \usepackage{subfig} % Adjusting captions for tables
-\captionsetup{belowskip=12pt,aboveskip=4pt} % Space above and below captions
+\captionsetup{belowskip=4pt,aboveskip=4pt} % Space above and below captions
+
+%\reversemarginpar %To get todo notes in the correct column
+%\setlength{\marginparwidth}{2cm} % To get todo items to appear correctly
 
 % \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png} 
 \begin{document}
